@@ -1,0 +1,13 @@
+services:
+  #redis database
+  redis-server:
+     image: redis
+     command: ["redis-server", "--protected-mode", "no"]
+
+  #Node application
+  node-app:
+     build: ./
+     image: docker.io/totasai551/visits
+     ports:
+            - "8081:8081"
+        
