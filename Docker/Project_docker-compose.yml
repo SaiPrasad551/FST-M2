@@ -8,7 +8,7 @@ services:
   # Node application
   api:
         build: ./
-        image: docker.io/supriyoibm/simple-blog-api
+        image: docker.io/totasai551/simple-blog-api
         environment:
             - POSTGRES_USERNAME=postgres
             - POSTGRES_HOST=postgres
