@@ -1,3 +1,6 @@
+-- Drop the old tables
+DROP TABLE employee;
+
 -- Create employee table
 CREATE TABLE employee(id INT, name STRING, dept STRING, yoj INT, salary INT)
 ROW FORMAT DELIMITED
